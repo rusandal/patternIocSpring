@@ -13,7 +13,9 @@
 
     <bean id="libraryBean"
           class="ru.minikhanov.Library">
-        <constructor-arg ref="bookBean"/>
+        <!--constructor-arg ref="bookBean"/-->
+        <!--name из сеттера setBooks spring убирает set и переводит в нижний регистр -->
+        <property name="books" ref="bookBean"/>
     </bean>
 
 </beans>
