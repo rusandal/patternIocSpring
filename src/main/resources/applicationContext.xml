@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="bookBean"
-          class="ru.minikhanov.ChildrensBook">
+          class="ru.minikhanov.ChildrensBook" init-method="doMyInit" destroy-method="doDestroyBean">
     </bean>
 
     <bean id="libraryBean"
