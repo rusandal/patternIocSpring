@@ -8,7 +8,12 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="bookBean"
-          class="ru.minikhanov.Whodunit">
+          class="ru.minikhanov.ChildrensBook">
+    </bean>
+
+    <bean id="libraryBean"
+          class="ru.minikhanov.Library">
+        <constructor-arg ref="bookBean"/>
     </bean>
 
 </beans>
